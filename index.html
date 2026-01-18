@@ -21,7 +21,7 @@ body {
     min-height: 100vh;
 
     /* Origami sole e luna ai lati */
-    background-image: url("sole.png"), url("luna.png");
+    background-image: url("images/sole.png"), url("images/luna.png");
     background-repeat: no-repeat, no-repeat;
     background-position: left top, right top;
     background-size: 150px auto, 150px auto;
@@ -29,7 +29,7 @@ body {
 
 header {
     font-family: 'Playfair Display', serif;
-    background-image: url("SAVE THE DATE.jpg");
+    background-image: url("images/SAVETHEDATE.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -139,6 +139,19 @@ footer {
     background-color: #e8dcd0;
     font-family: sans-serif;
 }
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+        right: 15px;
+    }
+
+    header .data {
+        font-size: 50px;
+        right: 15px;
+    }
+}
+
 </style>
 </head>
 
@@ -238,7 +251,7 @@ E così vissero, non solo felici e contenti, ma infiniti come il cielo d’estat
         <p style="text-align:center;"><strong>Cerimonia 🕊️</strong><br>Chiesa Parrocchiale San Giorgio Martire<br> Via Don Angelo Cavagna, 23<br> Costa di Mezzate (BG)</p>
         <p style="text-align:center;"><strong>Location 🏛️</strong><br>Portico del Seminario, Via Portico del Seminario, 1, Calcinate (BG)</p>
         <p style="text-align:center;"><strong>Dress Code 🎨</strong><br>Non desideriamo imporre un dress code, ma vi segnaliamo con piacere i colori principali della nostra moodboard, così da condividere con voi lo stile e l'atmosfera del nostro giorno speciale.</p><br>
-        <img src="mood palette.png" alt="Palette colori" style="display:block; margin:20px auto; max-width:300px; width:100%; height:auto; border-radius:8px;">
+        <img src="images/mood_palette.png" alt="Palette colori" style="display:block; margin:20px auto; max-width:300px; width:100%; height:auto; border-radius:8px;">
         <p style="text-align:center;"><strong>ORE 11:30 ⛪</strong><br>Inizio Cerimonia Religiosa<br>Vi invitiamo ad arrivare qualche minuto prima per salutare l'arrivo dello sposo e poi accomodarvi in chiesa, pronti a vedere la sposa apparire e a condividere con noi la magia di questo momento.</p>
         <p style="text-align:center;"><strong>ORE 13:30 🍹</strong><br>Arrivo Ospiti in Location<br>Saremo felici di continuare i festeggiamenti insieme: vi accoglieremo con un aperitivo, in attesa del nostro arrivo in location.</p>
         <p style="text-align:center;"><strong>ORE 15:30 🍽️</strong><br>Inizio Pranzo<br>Continueremo i festeggiamenti con un pranzo a più portate, sorbetto rinfrescante e tanta allegria, il tutto avvolto dalla musica che accompagnerà ogni momento della giornata.</p>
@@ -256,26 +269,7 @@ E così vissero, non solo felici e contenti, ma infiniti come il cielo d’estat
         marginwidth="0">
         Caricamento…
     </iframe>
-        <form>
-           <p><strong>Parteciperai?</strong></p>
-            <label><input type="radio" name="presenza" value="si" required> Sì</label>
-            <label><input type="radio" name="presenza" value="no"> No</label>
-
-            <p><strong>Porterai bambini?</strong></p>
-            <label><input type="radio" name="bambini" value="si" required> Sì</label>
-            <label><input type="radio" name="bambini" value="no"> No</label>
-            <textarea id="bambiniTesto" rows="3" placeholder="Età ed esigenze alimentari" style="display:none;"></textarea>
-
-            <p><strong>Hai intolleranze alimentari?</strong></p>
-            <label><input type="radio" name="intolleranze_si_no" value="si" required> Sì</label>
-            <label><input type="radio" name="intolleranze_si_no" value="no"> No</label>
-            <textarea id="intolleranzeTesto" rows="3" placeholder="Scrivi qui le tue intolleranze" style="display:none;"></textarea>
-
-            <p><strong>Messaggio agli sposi</strong></p>
-            <textarea rows="5" placeholder="Scrivi qui il tuo messaggio"></textarea>
-
-            <button type="submit">Invia Conferma</button>
-        </form>
+        
     </section>
 
     <section id="foto">
@@ -291,7 +285,7 @@ E così vissero, non solo felici e contenti, ma infiniti come il cielo d’estat
 </div>
 
 <footer>
-    <p>Lorenzo e Beatrice's Weeding</p>
+    <p>Lorenzo e Beatrice's Wedding</p>
 </footer>
 
 <script>
