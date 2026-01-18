@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Matrimonio di Lorenzo & Beatrice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #faf7f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    /* Origami sole e luna ai lati */
+    background-image: url("sole.png"), url("luna.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;
+    background-size: 150px auto, 150px auto;
+}
+
+header {
+    font-family: 'Playfair Display', serif;
+    background-image: url("SAVE THE DATE.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    font-size: 38px;
+    text-align: right;
+}
+
+header .data {
+    font-size: 80px;
+    font-weight: 700;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    color: #000;
+    text-shadow: 1px 1px 4px rgba(255,255,255,0.8);
+}
+
+nav {
+    background-color: #d6c6b8;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#contenitore-sezioni {
+    max-width: 900px;
+    margin: auto;
+    flex: 1;
+    padding: 0 20px;
+}
+
+section {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.6s ease, max-height 0.6s ease, padding 0.6s ease;
+    padding: 0 0;
+}
+
+section.active {
+    opacity: 1;
+    max-height: 5000px;
+    padding: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#ourstory p, #viaggio p, #details p {
+    font-family: 'Merriweather', serif;
+    line-height: 1.8;
+    font-size: 18px;
+    word-spacing: 0.15em;
+}
+
+/* FORM */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #d6c6b8;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #c4b2a3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8dcd0;
+    font-family: sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Lorenzo & Beatrice</h1>
+    <p class="data">17 07 2026</p>
+</header>
+
+<nav>
+    <a onclick="showSection('ourstory')">Our Story</a>
+    <a onclick="showSection('viaggio')">Viaggio di Nozze</a>
+    <a onclick="showSection('rsvp')">RSVP</a>
+    <a onclick="showSection('details')">Details</a>
+    <a onclick="showSection('foto')">Foto</a>
+</nav>
+
+<div id="contenitore-sezioni">
+
+    <section id="ourstory" class="active">
+        <h2>La Fiaba di Beatrice e Lorenzo 🌙✨</h2>
+        <p>
+            C’era una volta, in un regno dove le stelle sussurrano segreti agli innamorati, una ragazza dal cuore dolce e luminoso, di nome Beatrice, e un giovane cavaliere dal sorriso contagioso, chiamato Lorenzo.
+
+
+
+Il loro incontro avvenne in una notte danzante, quando le luci brillavano come lucciole d’estate. I loro sguardi si sfiorarono e fu subito colpo di fulmine, come se le costellazioni si fossero date appuntamento proprio lì.
+
+
+Ma il destino volle separarli: decise che Lorenzo, con la forza impetuosa dell’Ariete,  dovesse partire per un’avventura lontana, per inseguire il gioco che amava.
+
+E così, la scintilla rimase sospesa, come una lanterna accesa in una notte d’estate.
+
+
+
+Passarono i mesi, e Beatrice con l’armonia della Bilancia, continuava il suo cammino. Entrambi   rimasero a custodire nel cuore quella scintilla. Poi, quando il tempo sembrava aver spento quella luce, a mezzanotte di un giorno speciale arrivò un messaggio: un augurio gentile, pieno di affetto, che riaccese la fiamma. Era il modo che il destino aveva scelto per ricordare a entrambi che le stelle non si erano dimenticate l’una dell’altra.
+
+
+
+E così, tra una parola e l’altra, tra risposte timide e sorrisi digitali, nacque un filo invisibile che li unì di nuovo.
+
+Il loro primo incontro “ufficiale” fu in un semplice bar: nessun castello, nessun palazzo, solo due cuori che non avevano bisogno di nulla di più per riconoscersi.
+
+
+
+Beatrice amava in Lorenzo la sua simpatia, la sua bontà, il sorriso che accendeva i cuori. Lorenzo vedeva in Beatrice la dolcezza, la semplicità e la cura che sapeva regalare al mondo.
+
+Insieme affrontarono qualsiasi difficoltà, fu lì che impararono cosa significa crescere: due anime giovani che divennero forti e responsabili, che impararono la forza dell’amore: crescere, tenersi per mano, proteggendosi a vicenda come veri custodi.
+
+
+
+Gli astri, intanto, continuavano a scrivere la loro trama. Lui nato il 17 aprile, lei il 7 ottobre: due numeri che si rincorrono, come due voci che si cercano da sempre.
+
+
+
+E poi, in un giorno incantato, dinnanzi ad un maestoso Castello, dove i sogni si intrecciano alla magia, Lorenzo si inginocchiò e fece la sua proposta.
+
+Era il 25° compleanno di Beatrice, un traguardo speciale: il confine tra la leggerezza della giovinezza e l’inizio di qualcosa di più grande, autentico e profondo.
+
+
+Come in ogni fiaba, il tempo sembrò fermarsi — e proprio lì, tra luci scintillanti e promesse eterne, nacque un amore destinato a brillare per sempre.
+
+
+E quando il tempo fu maturo, scelsero come data il 17 luglio 2026, una notte d’estate, quando il cielo profuma di promesse. Una data che racchiude entrambi, un sigillo inciso non solo sulla terra, ma anche tra le stelle.
+
+
+Quel giorno, sotto lo sguardo di chi li ama, dissero “sì”.
+
+Non era solo la fine di una fiaba, ma l’inizio di mille altre: una casa da riempire di risate, una famiglia da immaginare, sogni da rincorrere insieme.
+
+
+
+E se qualcuno, un giorno, domanderà loro da dove iniziò la loro fiaba, racconteranno di una notte di balli, di un messaggio a mezzanotte e di come persino il cielo – con i suoi segni e le sue stelle – avesse già deciso che il loro amore fosse eterno.
+
+
+
+E così vissero, non solo felici e contenti, ma infiniti come il cielo d’estate.
+        </p>
+    </section>
+
+    <section id="viaggio">
+        <h2>Viaggio di Nozze</h2>
+        <p style="text-align:center;"><strong>New York 🗽</strong><br>	
+            Da sempre il nostro sogno nel cassetto, il luogo che più di ogni altro nel mondo abbiamo desiderato visitare. Cresciuti con serie tv ambientate tra i suoi grattacieli, siamo emozionati all'idea di scoprire insieme le sue strade e vivere il nostro viaggio di nozze come una favola moderna.</p>
+        <p style="text-align:center;"><strong>Las Vegas 🎰</strong><br>	
+            Ci attende un road trip indimenticabile: lunghe ore in macchina, solo noi due, immersi in paesaggi e colori mozzafiato. Le canzoni che hanno segnato la nostra vita accompagneranno ogni chilometro, cantate a squarciagola, rendendo questa avventura un momento unico e prezioso.</p>
+        <p style="text-align:center;"><strong>California 🌴</strong><br>San Francisco e Los Angeles ci aspettano per vivere il sogno californiano: tra palme, panorami spettacolari e le vibranti vibes americane, ogni momento sarà un emozione da custodire per sempre.</p>
+        <p style="text-align:center;"><strong>Miami e Bahamas 🏝️</strong><br>Tra le notti scintillanti di Miami e le acque cristalline delle Bahamas, ci concederemo un po' di meritato relax, chiudendo così questo lungo e ricco viaggio d'amore che abbiamo sognato e vissuto insieme.</p>
+        <p style="text-align:center;"><strong></strong>Il nostro sogno più grande è vivere insieme un viaggio indimenticabile.</strong><br></p>
+        <p style="text-align:center;">Chi desidera, può contribuire a rendere questo momento ancora più speciale con un pensiero tramite bonifico all'IBAN:<br></p>
+        <p style="text-align:center;">[inserire IBAN].</p>
+    </section>
+
+    <section id="details">
+        <h2>Details 📋</h2>
+        <p style="text-align:center;"><strong>Cerimonia 🕊️</strong><br>Chiesa Parrocchiale San Giorgio Martire<br> Via Don Angelo Cavagna, 23<br> Costa di Mezzate (BG)</p>
+        <p style="text-align:center;"><strong>Location 🏛️</strong><br>Portico del Seminario, Via Portico del Seminario, 1, Calcinate (BG)</p>
+        <p style="text-align:center;"><strong>Dress Code 🎨</strong><br>Non desideriamo imporre un dress code, ma vi segnaliamo con piacere i colori principali della nostra moodboard, così da condividere con voi lo stile e l'atmosfera del nostro giorno speciale.</p><br>
+        <img src="mood palette.png" alt="Palette colori" style="display:block; margin:20px auto; max-width:300px; width:100%; height:auto; border-radius:8px;">
+        <p style="text-align:center;"><strong>ORE 11:30 ⛪</strong><br>Inizio Cerimonia Religiosa<br>Vi invitiamo ad arrivare qualche minuto prima per salutare l'arrivo dello sposo e poi accomodarvi in chiesa, pronti a vedere la sposa apparire e a condividere con noi la magia di questo momento.</p>
+        <p style="text-align:center;"><strong>ORE 13:30 🍹</strong><br>Arrivo Ospiti in Location<br>Saremo felici di continuare i festeggiamenti insieme: vi accoglieremo con un aperitivo, in attesa del nostro arrivo in location.</p>
+        <p style="text-align:center;"><strong>ORE 15:30 🍽️</strong><br>Inizio Pranzo<br>Continueremo i festeggiamenti con un pranzo a più portate, sorbetto rinfrescante e tanta allegria, il tutto avvolto dalla musica che accompagnerà ogni momento della giornata.</p>
+        <p style="text-align:center;"><strong>ORE 18:30 🎂💃</strong><br>Taglio Torta e Danze<br>Dopo il taglio della torta e il lancio del bouquet, daremo inizio alle danze, per divertirci e celebrare insieme fino a tarda notte.</p>
+    </section>
+
+    <section id="rsvp">
+        <h2>Conferma la tua presenza</h2>
+        <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfXM6ntxNGWSkCe-teT1Nnx5Ohb-Ufp64P9-GlCffwMF2RvcA/viewform?embedded=true" 
+        width="640" 
+        height="1130" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+        Caricamento…
+    </iframe>
+        <form>
+           <p><strong>Parteciperai?</strong></p>
+            <label><input type="radio" name="presenza" value="si" required> Sì</label>
+            <label><input type="radio" name="presenza" value="no"> No</label>
+
+            <p><strong>Porterai bambini?</strong></p>
+            <label><input type="radio" name="bambini" value="si" required> Sì</label>
+            <label><input type="radio" name="bambini" value="no"> No</label>
+            <textarea id="bambiniTesto" rows="3" placeholder="Età ed esigenze alimentari" style="display:none;"></textarea>
+
+            <p><strong>Hai intolleranze alimentari?</strong></p>
+            <label><input type="radio" name="intolleranze_si_no" value="si" required> Sì</label>
+            <label><input type="radio" name="intolleranze_si_no" value="no"> No</label>
+            <textarea id="intolleranzeTesto" rows="3" placeholder="Scrivi qui le tue intolleranze" style="display:none;"></textarea>
+
+            <p><strong>Messaggio agli sposi</strong></p>
+            <textarea rows="5" placeholder="Scrivi qui il tuo messaggio"></textarea>
+
+            <button type="submit">Invia Conferma</button>
+        </form>
+    </section>
+
+    <section id="foto">
+        <h2>Foto</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/400x300" alt="Foto 1">
+            <img src="https://via.placeholder.com/400x300" alt="Foto 2">
+            <img src="https://via.placeholder.com/400x300" alt="Foto 3">
+            <img src="https://via.placeholder.com/400x300" alt="Foto 4">
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Lorenzo e Beatrice's Weeding</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    window.showSection = function(id) {
+        document.querySelectorAll('#contenitore-sezioni section').forEach(sec => sec.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        document.getElementById('contenitore-sezioni').scrollTop = 0;
+    }
+
+    // Bambini
+    document.querySelectorAll('input[name="bambini"]').forEach(r => {
+        r.addEventListener('change', e => {
+            const box = document.getElementById('bambiniTesto');
+            if(e.target.value==='si') box.style.display='block';
+            else { box.style.display='none'; box.value=''; }
+        });
+    });
+
+    // Intolleranze
+    document.querySelectorAll('input[name="intolleranze_si_no"]').forEach(r => {
+        r.addEventListener('change', e => {
+            const box = document.getElementById('intolleranzeTesto');
+            if(e.target.value==='si') box.style.display='block';
+            else { box.style.display='none'; box.value=''; }
+        });
+    });
+
+});
+</script>
+
+</body>
+</html>
